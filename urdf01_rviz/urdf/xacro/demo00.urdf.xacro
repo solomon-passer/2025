@@ -1,0 +1,18 @@
+<robot name="mycar" xmlns:xacro="http://wiki.ros.org/xacro">
+    <!-- 1.1属性封装 -->
+    <xacro:property name="PI" value="3.1415" />
+    <!-- 1.2属性调用 -->
+    <sphere name="${PI}"/>
+    <!-- 1.3算数运算 -->
+    <sphere result="${PI/2}"/>
+
+    <!-- 2.1宏定义 -->              <!-- 传参 -->
+    <xacro:macro name="add_getsum" params="num1 num2" >
+        <result aa="${num1+num2}"/>
+    </xacro:macro>
+    <!-- 2.2宏调用 -->
+    <xacro:add_getsum num1="1" num2="2" />
+
+    <!-- 0.0件包含 -->
+    <xacro:include filename="demo01.urdf.xacro" />
+</robot> 

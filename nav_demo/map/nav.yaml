@@ -1,0 +1,11 @@
+image: /home/solomon/catkin_ws/src/nav_demo/map/nav.pgm
+#刻度尺单位，米/像素。一个像素对应多少米
+resolution: 0.050000
+#地图的位姿：rviz相对于地图的坐标系
+origin: [-50.000000, -50.000000, 0.000000]
+negate: 0
+#p=(255-x)/255
+#p＞ot障碍物，p＜ft无物
+occupied_thresh: 0.65
+free_thresh: 0.196
+

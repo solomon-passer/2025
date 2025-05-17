@@ -1,0 +1,40 @@
+<robot name="mycar">
+    <link name="base_footprint"><!--解决半沉问题，极小-->
+        <visual><geometry>
+            <box size="0.001 0.001 0.001" />
+        </geometry></visual> </link>
+    <link name="base_link"><!--主体-->
+        <visual><geometry>
+        <box size="0.3 0.2 0.1" /></geometry>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <material name="car_color1">
+        <color rgba="0.8 0.5 0 0.5" /></material>
+        </visual></link>
+    <link name="camera"><!--摄像头-->
+        <visual>
+            <geometry>
+                <box size="0.02 0.05 0.05" />
+            </geometry><!-- 下面向Z偏移半个自己高度 -->
+            <origin xyz="0 0 0.025" rpy="0 0 0" />
+            <material name="camare_color2">
+                <color rgba="0 0 1 0.5" />
+            </material>
+        </visual>
+    </link>
+
+    <joint name="camera2base" type="continuous"><!-- 关节 -->
+        <parent link="base_link"/>
+        <child link="camera" />
+        <origin xyz="0.12 0 0.05" rpy="0 0 0" />
+        <!--考虑物理中心。参数1<=base长度一半，参数2=base高度一半-->
+        <axis xyz="0 0 1" />  <!--不绕x，不饶y，绕z。z设为!0 -->
+    </joint>
+    <!--固定关节-->
+    <joint name="link2footprint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link" />
+        <origin xyz="0 0 0.05" rpy="0 0 0" />
+    <!--首先原点处必须有link，其次foot包含在base中的。-->
+    <!--foot是可以忽略的，所以要偏移半个base高度，原点0-0.5_-->
+    </joint>
+</robot>

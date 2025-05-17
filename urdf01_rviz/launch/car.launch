@@ -1,0 +1,11 @@
+<launch>                               <!-- 多一个find xacro -->
+    <param name="robot_description" command="$(find xacro)/xacro  
+    $(find urdf01_rviz)/urdf/xacro/car.urdf.xacro"/>
+
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find urdf01_rviz)/config/show_mycar.rviz"/>
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
+   
+    <!-- 启动图形化的控制关节运动节点 -->
+    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
+     <!-- 抖动原因：joint_state_publisher_gui内部包含了 joint_state_publisher 的功能 -->
+</launch>
