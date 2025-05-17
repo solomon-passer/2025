@@ -1,0 +1,22 @@
+# 忽略ROS编译生成的目录
+build/
+devel/
+install/
+
+# 忽略ROS日志文件
+logs/
+
+# 忽略Python相关文件
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# 忽略IDE/编辑器生成的配置文件
+.vscode/
+.idea/
+*.swp
+
+# 忽略环境配置文件
+.env
+
