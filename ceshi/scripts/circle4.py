@@ -24,7 +24,7 @@ def draw_concentric_disks():
     rospy.sleep(1)  # 等待连接完成
 
 
-    radii = [4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1, 0.5]
+    radii = [4.0, 3.5, 3.0, 2.5, 2.0, 1.4, 0.8, 0.2]
     
     # 颜色列表
     colors = [
