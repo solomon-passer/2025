@@ -28,7 +28,7 @@ def draw_concentric_disks():
     center_y = 10
 
     # 圆盘半径 - 调整为8个圆
-    radii = [4.0, 3.5, 3.0, 2.5, 2.0, 1.5, 1, 0.5]
+    radii = [2.8, 2.5, 2.0, 1.5, 1, 0.5,0.2, 0.1]
     
     # 颜色列表
     colors = [
@@ -42,8 +42,8 @@ def draw_concentric_disks():
         (255, 192, 203), # 粉
     ]
  
-    angular_speed = 10.0   # 乌龟转速
-    rate = rospy.Rate(50)  # 控制发布频率
+    angular_speed = 20   # 乌龟转速
+    rate = rospy.Rate(100)  # 控制发布频率
 
     
     initial_width = 255  # 初始宽度

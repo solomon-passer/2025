@@ -1,3 +1,27 @@
 {
-    "C_Cpp.errorSquiggles": "disabled"//disabled/enabled错误提示
+    "C_Cpp.errorSquiggles": "disabled",
+    "python.autoComplete.extraPaths": [
+        "/home/solomon/catkin_ws/devel_isolated/ceshi/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/wpb_home_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/wpb_home_behaviors/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/orb_slam3_ros/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/limo_base/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/turtlesim/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/rospy_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/roscpp_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/solomon/catkin_ws/devel_isolated/ceshi/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/wpb_home_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/wpb_home_behaviors/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/orb_slam3_ros/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/limo_base/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/turtlesim/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/rospy_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel_isolated/roscpp_tutorials/lib/python3/dist-packages",
+        "/home/solomon/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ] //disabled/enabled错误提示
 }

@@ -24,7 +24,7 @@ def draw_concentric_disks():
     rospy.sleep(1)  # 等待连接完成
 
 
-    radii = [4.0, 3.5, 3.0, 2.5, 2.0, 1.4, 0.8, 0.2]
+    radii = [3.2, 2.8, 2.2, 1.8, 1.4, 1.0, 0.6, 0.2]
     
     # 颜色列表
     colors = [
@@ -38,7 +38,7 @@ def draw_concentric_disks():
         (255, 192, 203), # 粉
     ]
 
-    angular_speed = 10.0  # 乌龟转速
+    angular_speed = 20  # 乌龟转速
     rate = rospy.Rate(50)  # 控制发布频率
 
     # 初始宽度
